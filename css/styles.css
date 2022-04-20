@@ -167,7 +167,7 @@ hr {
 }
 
 .contenedor__color4 {
-    background-color: #8A866F;
+    background-color: #c5c5c4;
     color: #000000;
 }
 
@@ -220,6 +220,7 @@ hr {
     width: 200px;
     height: 200px;
     border-radius: 25px;
+    box-shadow: -3px 2px 11px 0px #2c2b2b ;
 }
 
 .contenendor__galeria--items:hover {
@@ -229,7 +230,7 @@ hr {
 }
 
 .contenedor__tarjetas {
-    display: inline-block;
+    display: inline-flex;
     min-width: 200px;
     height: 300px;
     background-color: #a4eae0;
@@ -238,6 +239,8 @@ hr {
     padding: 10px;
     margin: 10px;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contenedor__tarjetas--lg {
@@ -252,7 +255,13 @@ hr {
     margin: 40px;
     border-radius: 25px;
 }
-
+.contenedor__tarjetas--sm {
+    width: 170px;
+    height: 70px;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 25px;
+}
 .contenedor__tarjetas li {
     padding: 0px 40px 0px 40px;
 }
