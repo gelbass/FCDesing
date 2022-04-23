@@ -20,25 +20,25 @@ hr {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "header header header"
-        "nav nav nav"
-        "container container container"
-        "footer footer footer";
+        "header header"
+        "menu_grid menu_grid"
+        "contenedor contenedor"
+        "footer footer";
 }
 
 #header {
     grid-area: header;
 }
 
-#nav {
-    grid-area: nav;
+#menu {
+    grid-area: menu_grid;
 }
 
 #footer {
     grid-area: footer;
 }
 
-#container {
+#container__maquetedo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -48,7 +48,7 @@ hr {
         "servicios servicios"
         "clientes clientes"
         "contacto contacto";
-    grid-area: container;
+    grid-area: contenedor;
 }
 
 #container__individual {
@@ -57,7 +57,7 @@ hr {
     grid-auto-flow: row;
     grid-template-areas:
         "nosotros";
-    grid-area: container;
+    grid-area: contenedor;
 }
 
 #nosotros {
@@ -129,7 +129,6 @@ hr {
     height: 100px;
     background-color: #000000;
     color: #FFA4b3;
-    ;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
@@ -420,12 +419,12 @@ hr {
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "header nav nav"
-            "container container container"
+            "header menu_grid menu_grid"
+            "container__maquetedo container__maquetedo container__maquetedo"
             "footer footer footer";
     }
 
-    #container {
+    #container__maquetedo {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 0.1fr);
@@ -598,12 +597,12 @@ hr {
         grid-auto-flow: row;
         grid-template-areas:
             "header header header"
-            "nav nav nav"
-            "container container container"
+            "menu_grid menu_grid menu_grid"
+            "container__maquetedo container__maquetedo container__maquetedo"
             "footer footer footer";
     }
 
-    #container {
+    #container__maquetedo {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 0.2fr);
@@ -739,12 +738,12 @@ hr {
         grid-auto-flow: row;
         grid-template-areas:
             "header header header"
-            "nav nav nav"
-            "container container container"
+            "menu_grid menu_grid menu_grid"
+            "container__maquetedo container__maquetedo container__maquetedo"
             "footer footer footer";
     }
 
-    #container {
+    #container__maquetedo {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 0.2fr);
@@ -874,12 +873,12 @@ hr {
         grid-auto-flow: row;
         grid-template-areas:
             "header header header"
-            "nav nav nav"
-            "container container container"
+            "menu_grid menu_grid menu_grid"
+            "container__maquetedo container__maquetedo container__maquetedo"
             "footer footer footer";
     }
 
-    #container {
+    #container__maquetedo {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 0.2fr);
