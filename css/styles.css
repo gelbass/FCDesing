@@ -16,7 +16,7 @@ hr {
 #main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 350px 50px 1fr 100px;
+    grid-template-rows: 385px 60px 1fr 100px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -38,7 +38,11 @@ hr {
     grid-area: footer;
 }
 
+<<<<<<< HEAD
 #container__maquetedo {
+=======
+#container__maquetado {
+>>>>>>> desarrollo_1
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -80,23 +84,25 @@ hr {
 /* Header */
 .cabecero {
     width: auto;
-    height: 320px;
+    height: 360px;
     background-color: #ffffff;
     text-align: center;
     padding: 20px;
+    z-index: 1;
 }
 
 .cabecero__menu {
     display: flex;
     position: sticky;
     top: 0px;
-    height: 50px;
-    padding-top: 30px;
+    /* height: 80px; */
+    padding-top: 10px;
     padding-bottom: 5px;
     background-color: #ffffff;
     text-align: center;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 1;
 }
 
 .cabecero__menu li {
@@ -112,6 +118,7 @@ hr {
 
 .cabecero__menu__items:hover {
     font-weight: 900;
+    color: #FFA4b3;
 }
 
 .cabecero__menu__items--seleccionado {
@@ -161,7 +168,7 @@ hr {
 }
 
 .contenedor__color3 {
-    background-color: #939393;
+    background-color: #d4d4d4;
     color: #000000;
 }
 
@@ -184,8 +191,8 @@ hr {
 
 .contenedor__titulo--Center {
     font-size: 50px;
-    margin: 10px;
-    padding: 37px;
+    /* margin: 10px; */
+    /* padding: 37px; */
 }
 
 .contenedor__cajas {
@@ -199,7 +206,7 @@ hr {
 
 .contenedor__galeria {
     display: grid;
-    grid-template-columns: repeat(6, 2fr);
+    grid-template-columns: repeat(5, 2fr);
     padding: 20px;
     gap: 10px;
 }
@@ -219,11 +226,11 @@ hr {
     width: 200px;
     height: 200px;
     border-radius: 25px;
-    box-shadow: -3px 2px 11px 0px #2c2b2b ;
+    box-shadow: -3px 2px 11px 0px #2c2b2b;
 }
 
 .contenendor__galeria--items:hover {
-    animation-delay: 10s;
+    transition-delay: 10s;
     transition: transform 0.8s;
     transform: scale(1.5, 1.5);
 }
@@ -231,7 +238,8 @@ hr {
 .contenedor__tarjetas {
     display: inline-flex;
     min-width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 370px;
     border-radius: 25px;
     color: #2c2b2b;
     padding: 20px;
@@ -243,24 +251,26 @@ hr {
 
 .contenedor__tarjetas--lg {
     width: 400px;
-    height: 500px;
+    height: 670px;
 }
 
 .contenedor__tarjetas--info {
     width: 400px;
-    height: 200px;
+    height: 380px;
     padding: 30px;
     margin: 40px;
     border-radius: 25px;
 }
+
 .contenedor__tarjetas--sm {
     width: 170px;
-    height: 70px;
+    height: 120px;
     padding: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 25px;
 }
+
 .contenedor__tarjetas li {
     padding: 0px 40px 0px 40px;
 }
@@ -269,7 +279,7 @@ hr {
 
 /* Formuario */
 .formulario {
-    display: inline-block;
+    /* display: inline-block; */
     margin: 10px;
     padding: 30px;
     border: 1px solid #a4eae0;
@@ -287,13 +297,13 @@ hr {
 }
 
 .formulario__input {
-    display: inline-block;
+    /* display: inline-block; */
     border: #a4eae0 solid;
     border-radius: 6px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    width: 350px;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    /* text-align: center; */
+    /* width: 350px; */
 }
 
 /* Fin Formuario */
@@ -309,12 +319,12 @@ hr {
 }
 
 .btn:hover {
-    border: 2px #a4eae0 solid;
+    border: 2px #FFA4b3 solid;
     border-radius: 12px;
     padding: 10px;
     margin: 5px;
     cursor: pointer;
-    background: #a4eae0;
+    background: #FFA4b3;
     color: #000000;
 }
 
@@ -380,13 +390,15 @@ hr {
     transition: transform 0.8s;
     transform: scale(1.5, 1.5);
 }
-.imagenes__clientes img{
+
+.imagenes__clientes img {
     border-radius: 100%;
     width: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.imagenes__clientes--lg img{
+
+.imagenes__clientes--lg img {
     border-radius: 25px;
     width: 200px;
     height: 180px;
@@ -405,8 +417,12 @@ hr {
     background-color: #eaeaea;
     margin: 10px;
     padding: 10px;
-    width:600px;
-    height:450px
+    width: 600px;
+    height: 450px
+}
+
+.navbar-toggler {
+    border: none;
 }
 
 /* Inicio Media Query */
@@ -415,13 +431,20 @@ hr {
     #main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 180px 1fr 100px;
+        grid-template-rows: 330px 220rem 100px;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
+<<<<<<< HEAD
             "header menu_grid menu_grid"
             "container__maquetedo container__maquetedo container__maquetedo"
             "footer footer footer";
+=======
+            "menu_grid menu_grid"
+            "contenedor contenedor"
+            "footer footer";
+
+>>>>>>> desarrollo_1
     }
 
     #container__maquetedo {
@@ -439,20 +462,22 @@ hr {
     }
 
     .cabecero {
-        position: sticky;
+        display: none;
+        /* position: sticky;
         top: 0px;
-        height: 150px;
+        height: 230px;
         width: auto;
         padding-top: 30px;
         padding-bottom: 5px;
         background-color: #ffffff;
-        text-align: center;
+        text-align: center; */
     }
 
     .cabecero__menu {
         display: flex;
         flex-direction: column;
-        height: 150px;
+        flex-wrap: nowrap;
+        /* height: 330px; */
     }
 
     .cabecero__menu li {
@@ -477,16 +502,14 @@ hr {
 
     .contenedor__tarjetas--info {
         width: 260px;
-        height: 325px;
+        height: 580px;
         padding: 20px;
         border-radius: 25px;
     }
 
     .contenedor__tarjetas--lg {
-        width: 250px;
-        height: 300px;
-        min-width: 100px;
-        min-height: 200px;
+        width: 350px;
+        height: 680px;
     }
 
     .contenedor--invertido {
@@ -522,6 +545,7 @@ hr {
             "grupo2"
             "grupo3";
     }
+
     .imagenes__nosotros {
         width: 300px;
     }
@@ -555,34 +579,8 @@ hr {
     }
 
     /* Formuario */
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        padding: 10px;
-        border: 1px solid #a4eae0;
-        background-color: #eaeaea;
-        border-radius: 15px;
-    }
 
-    .formulario__bloques {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-
-    .formulario__input {
-        display: inline-block;
-        border: #a4eae0 solid;
-        border-radius: 6px;
-        padding: 10px;
-        margin: 10px;
-        text-align: center;
-        width: 250px;
-    }
-
-    .mapa{
+    .mapa {
         width: 300px;
         height: 200px;
     }
@@ -593,13 +591,20 @@ hr {
     #main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 350px 115px 1fr 100px;
+        grid-template-rows: 330px 220rem 100px;
+        gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
+<<<<<<< HEAD
             "header header header"
             "menu_grid menu_grid menu_grid"
             "container__maquetedo container__maquetedo container__maquetedo"
             "footer footer footer";
+=======
+            "menu_grid menu_grid"
+            "contenedor contenedor"
+            "footer footer";
+>>>>>>> desarrollo_1
     }
 
     #container__maquetedo {
@@ -615,9 +620,13 @@ hr {
         grid-area: container;
     }
 
+    .cabecero {
+        display: none;
+    }
+
     .cabecero__menu {
         display: flex;
-        height: 80px;
+        /* height: 160px; */
     }
 
     .cabecero__menu li {
@@ -695,48 +704,26 @@ hr {
         width: 200px;
     }
 
-    /* Formuario */
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        padding: 10px;
-        border: 1px solid #a4eae0;
-        background-color: #eaeaea;
-        border-radius: 15px;
+    .imagenes__logo {
+        height: 100px;
     }
 
-    .formulario__bloques {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-
-    .formulario__input {
-        display: inline-block;
-        border: #a4eae0 solid;
-        border-radius: 6px;
-        padding: 10px;
-        margin: 10px;
-        text-align: center;
-        width: 250px;
-    }
-
-    /* Fin Formuario */
-    .mapa{
+    .mapa {
         width: 400px;
         height: 300px;
     }
 }
-
-@media only screen and (min-width:551px) and (max-width:820px) {
+/*  */
+@media only screen and (min-width:551px) and (max-width:767px) {
+    
     #main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 350px 115px 1fr 100px;
+        grid-template-rows: 244px 149rem 100px;
+        gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
+<<<<<<< HEAD
             "header header header"
             "menu_grid menu_grid menu_grid"
             "container__maquetedo container__maquetedo container__maquetedo"
@@ -744,6 +731,14 @@ hr {
     }
 
     #container__maquetedo {
+=======
+            "menu_grid menu_grid"
+            "contenedor contenedor"
+            "footer footer";
+    }
+
+    /* #container__maquetedo {
+>>>>>>> desarrollo_1
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 0.2fr);
@@ -754,9 +749,9 @@ hr {
             "clientes clientes"
             "contacto contacto";
         grid-area: container;
-    }
-    .cabecero__menu {
-        height: 70px;
+    } */
+    .cabecero {
+        display: none;
     }
 
     .cabecero__menu li {
@@ -831,51 +826,35 @@ hr {
         width: 200px;
     }
 
-    /* Formuario */
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        padding: 10px;
-        border: 1px solid #a4eae0;
-        background-color: #eaeaea;
-        border-radius: 15px;
+    .imagenes__logo {
+        height: 150px;
     }
 
-    .formulario__bloques {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-
-    .formulario__input {
-        display: inline-block;
-        border: #a4eae0 solid;
-        border-radius: 6px;
-        padding: 10px;
-        margin: 10px;
-        text-align: center;
-        width: 250px;
-    }
     /* Fin Formuario */
-    .mapa{
+    .mapa {
         width: 500px;
         height: 300px;
     }
 }
 
-@media only screen and (min-width:821px) and (max-width:1020px) {
+@media only screen and (min-width:768px) and (max-width:1020px) {
     #main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 350px 115px 1fr 100px;
+        grid-template-rows: 350px 115px 145rem 100px;
         grid-auto-flow: row;
         grid-template-areas:
+<<<<<<< HEAD
             "header header header"
             "menu_grid menu_grid menu_grid"
             "container__maquetedo container__maquetedo container__maquetedo"
             "footer footer footer";
+=======
+            "header header"
+            "menu_grid menu_grid menu_grid"
+            "container__maquetedo container__maquetedo"
+            "footer footer";
+>>>>>>> desarrollo_1
     }
 
     #container__maquetedo {
@@ -890,6 +869,7 @@ hr {
             "contacto contacto";
         grid-area: container;
     }
+
     .contenedor__galeria {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -919,6 +899,9 @@ hr {
         text-align: center;
     }
 
+    .cabecero__menu li{
+        padding: 0px 5px 0px 24px;
+    }
     .imagenes__nosotros {
         width: 300px;
     }
@@ -946,36 +929,6 @@ hr {
     .imagenes__servicios--6 {
         width: 200px;
     }
-
-    /* Formuario */
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        padding: 10px;
-        border: 1px solid #a4eae0;
-        background-color: #eaeaea;
-        border-radius: 15px;
-    }
-
-    .formulario__bloques {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-
-    .formulario__input {
-        display: inline-block;
-        border: #a4eae0 solid;
-        border-radius: 6px;
-        padding: 10px;
-        margin: 10px;
-        text-align: center;
-        width: 250px;
-    }
-
-    /* Fin Formuario */
 }
 
 @media only screen and (min-width:1020px) and (max-width:1300px) {
