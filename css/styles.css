@@ -38,7 +38,7 @@ hr {
     grid-area: footer;
 }
 
-#container__maquetedo {
+#container__maquetado {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -431,9 +431,10 @@ hr {
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "header menu_grid menu_grid"
-            "container__maquetedo container__maquetedo container__maquetedo"
-            "footer footer footer";
+            "menu_grid menu_grid"
+            "contenedor contenedor"
+            "footer footer";
+
     }
 
     #container__maquetedo {
@@ -584,10 +585,9 @@ hr {
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "header header header"
-            "menu_grid menu_grid menu_grid"
-            "container__maquetedo container__maquetedo container__maquetedo"
-            "footer footer footer";
+            "menu_grid menu_grid"
+            "contenedor contenedor"
+            "footer footer";
     }
 
     #container__maquetedo {
@@ -706,13 +706,12 @@ hr {
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "header header header"
-            "menu_grid menu_grid menu_grid"
-            "container__maquetedo container__maquetedo container__maquetedo"
-            "footer footer footer";
+            "menu_grid menu_grid"
+            "contenedor contenedor"
+            "footer footer";
     }
 
-    #container__maquetedo {
+    /* #container__maquetedo {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 0.2fr);
@@ -818,10 +817,10 @@ hr {
         grid-template-rows: 350px 115px 145rem 100px;
         grid-auto-flow: row;
         grid-template-areas:
-            "header header header"
+            "header header"
             "menu_grid menu_grid menu_grid"
-            "container__maquetedo container__maquetedo container__maquetedo"
-            "footer footer footer";
+            "container__maquetedo container__maquetedo"
+            "footer footer";
     }
 
     #container__maquetedo {
