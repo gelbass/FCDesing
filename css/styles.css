@@ -38,11 +38,7 @@ hr {
     grid-area: footer;
 }
 
-<<<<<<< HEAD
 #container__maquetado {
-=======
-#container__maquetedo {
->>>>>>> 4eccbef (Commit con errores)
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -435,16 +431,10 @@ hr {
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-<<<<<<< HEAD
             "menu_grid menu_grid"
             "contenedor contenedor"
             "footer footer";
 
-=======
-            "header menu_grid menu_grid"
-            "container__maquetedo container__maquetedo container__maquetedo"
-            "footer footer footer";
->>>>>>> 4eccbef (Commit con errores)
     }
 
     #container__maquetedo {
@@ -595,16 +585,9 @@ hr {
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-<<<<<<< HEAD
             "menu_grid menu_grid"
             "contenedor contenedor"
             "footer footer";
-=======
-            "header header header"
-            "menu_grid menu_grid menu_grid"
-            "container__maquetedo container__maquetedo container__maquetedo"
-            "footer footer footer";
->>>>>>> 4eccbef (Commit con errores)
     }
 
     #container__maquetedo {
@@ -723,22 +706,12 @@ hr {
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-<<<<<<< HEAD
             "menu_grid menu_grid"
             "contenedor contenedor"
             "footer footer";
     }
 
     /* #container__maquetedo {
-=======
-            "header header header"
-            "menu_grid menu_grid menu_grid"
-            "container__maquetedo container__maquetedo container__maquetedo"
-            "footer footer footer";
-    }
-
-    #container__maquetedo {
->>>>>>> 4eccbef (Commit con errores)
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 0.2fr);
@@ -844,17 +817,10 @@ hr {
         grid-template-rows: 350px 115px 145rem 100px;
         grid-auto-flow: row;
         grid-template-areas:
-<<<<<<< HEAD
             "header header"
             "menu_grid menu_grid menu_grid"
             "container__maquetedo container__maquetedo"
             "footer footer";
-=======
-            "header header header"
-            "menu_grid menu_grid menu_grid"
-            "container__maquetedo container__maquetedo container__maquetedo"
-            "footer footer footer";
->>>>>>> 4eccbef (Commit con errores)
     }
 
     #container__maquetedo {
