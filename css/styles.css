@@ -439,9 +439,6 @@ hr {
 .navbar-toggler {
     border: none;
 }
-.flechas{
-    padding: 50px;
-}
 
 /* Inicio Media Query */
 @media only screen and (min-width:0px) and (max-width:349px) {
