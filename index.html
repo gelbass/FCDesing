@@ -14,11 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <title>FC Desing - Diseño gráfico - UX/UI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,20 +28,20 @@
             <img src="./img/fcDesing_logo1.jpeg" class="imagenes__logo" alt="FC Desing">
             <h3>Diseño gráfico - UX/UI</h3>
         </header>
-        <nav class="navbar navbar-expand-md navbar-light cabecero__menu navbarToggleExternalContent" id="menu">
-            <div class="navbar-toggler"  aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-md navbar-light cabecero__menu" id="menu">
+            <div class="navbar-toggler cabecero__menu--sm" aria-label="Toggle navigation">
                 <img src="./img/fcDesing_logo1.jpeg" class="imagenes__logo" alt="FC Desing">
-                <h3>Diseño gráfico - UX/UI</h3>
+                <h3 class="titulo__menu--sm">Diseño gráfico - UX/UI</h3>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse cabecero__menu"  id="navbarSupportedContent">
-                <ul class="nav justify-content-center">
+            <div class="collapse navbar-collapse cabecero__menu" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active cabecero__menu__items--seleccionado" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active cabecero__menu__items--seleccionado" aria-current="page"
+                            href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link cabecero__menu__items" href="./pages/nosotros.html">Nosotros</a>
@@ -61,14 +58,13 @@
                 </ul>
             </div>
         </nav>
-
         <!-- FIN HEADER -->
 
-        <div id="container__maquetado">
+        <div id="container__index">
             <!-- NOSOTROS -->
             <section class="contenedor contenedor__color1" id="nosotros">
                 <div class="contenedor__cajas">
-                    <h2 class="contenedor__titulo--Left">Nosotros</h2>
+                    <h2 class="contenedor__titulo contenedor__titulo--Left">Nosotros</h2>
                     <img class="imagenes__nosotros" src="./img/Nosotros.jpg" alt="nosotros">
                 </div>
             </section>
@@ -91,23 +87,20 @@
                         <img src="./img/servicios6.jpg" class="imagenes__servicios imagenes__servicios--6"
                             alt="servicios">
                     </div>
-                    <h2 class="contenedor__titulo--Right">Nuestros Servicios</h2>
+                    <h2 class="contenedor__titulo contenedor__titulo--Right">Nuestros Servicios</h2>
                 </div>
             </section>
             <!-- FIN SERVICIOS -->
 
             <!-- NUESTROS CLIENTES -->
             <section class="contenedor contenedor__color3" id="clientes">
-                <h2 class="contenedor__titulo--Center">Nuestros Clientes</h2>
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
+                <h2 class="contenedor__titulo contenedor__titulo--Center">Nuestros Clientes</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="contenedor__tarjetas contenedor__color1">
@@ -158,6 +151,8 @@
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="carousel-item">
                             <div class="contenedor__tarjetas contenedor__color1">
                                 <h3>GT Trading</h3>
                                 <div class="imagenes__clientes">
@@ -174,8 +169,6 @@
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
                             <div class="contenedor__tarjetas contenedor__color1">
                                 <h3>ALTO</h3>
                                 <div class="imagenes__clientes">
@@ -208,6 +201,8 @@
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="carousel-item">
                             <div class="contenedor__tarjetas contenedor__color1">
                                 <h3>David Firman</h3>
                                 <div class="imagenes__clientes">
@@ -240,8 +235,6 @@
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
                             <div class="contenedor__tarjetas contenedor__color1">
                                 <h3>Azul Cazador</h3>
                                 <div class="imagenes__clientes">
@@ -258,6 +251,9 @@
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="carousel-item">
+
                             <div class="contenedor__tarjetas contenedor__color1">
                                 <h3>Mayin</h3>
                                 <div class="imagenes__clientes">
@@ -308,6 +304,16 @@
                             </div>
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon flechas" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
                 </div>
             </section>
             <!-- FIN NUESTROS CLIENTES -->
@@ -315,32 +321,32 @@
             <!-- SUSCRIPCION -->
             <section id="contacto">
                 <div class="contenedor contenedor__color4">
-                    <h2 class="contenedor__titulo--Center">Suscribete</h2>
-                    <form class="formulario" action="">
+                    <h2 class="contenedor__titulo contenedor__titulo--Center">Suscribete</h2>
+                    <form class="formulario formulario--lg" action="">
                         <div class="form-group row">
-                            <label for="col-sm-2 col-form-label nombre">Nombre </label>
-                            <input class="formulario__input form-control col-sm-10" type="text" name="nombre" placeholder="Ingrese Nombre"
-                                required>
+                            <label class="col-sm-2 form-label" for="nombre">Nombre </label>
+                            <input class="formulario__input form-control col-sm-10" type="text" name="nombre"
+                                id="nombre" placeholder="Ingrese Nombre" required>
                         </div>
                         <div class="form-group row">
-                            <label for="col-sm-2 col-form-label apellido">Apellido</label>
-                            <input class="formulario__input form-control col-sm-10" type="text" name="apellido" placeholder="Ingrese Apellido"
-                                required>
+                            <label class="col-sm-2 form-label" for="apellido">Apellido</label>
+                            <input class="formulario__input form-control col-sm-10" type="text" name="apellido"
+                                id="apellido" placeholder="Ingrese Apellido" required>
                         </div>
                         <div class="form-group row">
-                            <label for="col-sm-2 col-form-label email">Email</label>
-                            <input class="formulario__input form-control col-sm-10" type="email" name="email" placeholder="Ingrese email"
-                                required>
+                            <label class="col-sm-2 form-label" for="email">Email</label>
+                            <input class="formulario__input form-control col-sm-10" type="email" name="email" id="email"
+                                placeholder="Ingrese email" required>
                         </div>
                         <div class="form-group row">
-                            <label for="col-sm-2 col-form-label mensaje">Mensaje</label>
-                            <textarea class="formulario__input form-control col-sm-10" name="mensaje" id="" cols="20" rows="4"
-                                placeholder="Ingrese mensaje"></textarea>
+                            <label class="col-sm-2 form-label" for="mensaje">Mensaje</label>
+                            <textarea class="formulario__input form-control col-sm-10" name="mensaje" id="mensaje"
+                                cols="20" rows="4" placeholder="Ingrese mensaje"></textarea>
                         </div>
                         <hr>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="" id="checkbox" required>
-                            <label for="checkbox" class="form-check-label">Acepto politicas y condiciones</label> 
+                            <label for="checkbox" class="form-check-label">Acepto politicas y condiciones</label>
                         </div>
                         <div class="form-group">
                             <input class="btn" type="submit" value="Suscribete">
@@ -370,11 +376,14 @@
         </a>
         <!-- FIN ANCLA INICIO DE PAGINA -->
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
 </body>
 
