@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fuentePrincipal;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    border: 1px solid #a4eae0;
+}
+
+/* INICIO MAQUETADO CON GRID */
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "menu_grid menu_grid"
+        "contenedor contenedor"
+        "footer footer";
+}
+
+#header {
+    grid-area: header;
+}
+
+#menu {
+    grid-area: menu_grid;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+#container__index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "nosotros"
+        "servicios"
+        "clientes"
+        "contacto";
+    grid-area: contenedor;
+}
+
+#container__individual {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nosotros";
+    grid-area: contenedor;
+}
+
+#nosotros {
+    grid-area: nosotros;
+}
+
+#servicios {
+    grid-area: servicios;
+}
+
+#clientes {
+    grid-area: clientes;
+}
+
+#contacto {
+    grid-area: contacto;
+}
+
+/* FIN MAQUETADO CON GRID */
+
+/* Header */
+.cabecero {
+    background-color: $colorHeader;
+    text-align: center;
+    z-index: 1;
+}
+
+.cabecero__menu {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: $colorHeader;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+
+    li {
+        display: inline-block;
+        padding: 0px 40px 0px 40px;
+    }
+}
+.cabecero__menu--sm{
+    border: none;
+}
+
+.cabecero__menu__items {
+    text-decoration: none;
+    color: $color4;
+
+    &:hover {
+        font-weight: bold;
+        color: $color5;
+    }
+}
+
+.cabecero__menu__items--seleccionado {
+    font-weight: bold;
+    text-decoration: none;
+    color: $colorFuente2;
+}
+
+/* Fin Header */
+
+/* Footer */
+.pie {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: $colorFooter;
+    color: $color5;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.pie__contenedor {
+    font-size: 30px;
+}
+
+/* Fin Footer */
