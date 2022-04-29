@@ -1,0 +1,50 @@
+/* Formuario */
+.formulario {
+    /* display: inline-block; */
+    margin: 10px;
+    padding: 30px;
+    border: 1px solid $color1;
+    background-color: $color2;
+    border-radius: $bordes;
+}
+
+.formulario__bloques {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-end;
+}
+
+.formulario--lg {
+    width: 550px;
+}
+
+.formulario__input {
+    border: $color1 solid;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Fin Formuario */
+
+.btn {
+    border: 2px $color1 solid;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 5px;
+    width: 150px;
+    background: $color2;
+    text-transform: uppercase;
+
+    &:hover {
+        border: 2px $color5 solid;
+        border-radius: 12px;
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+        background: $color5;
+        color: $colorFuente2;
+    }
+}

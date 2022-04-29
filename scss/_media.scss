@@ -1,0 +1,415 @@
+/* Inicio Media Query */
+@media only screen and (min-width:0px) and (max-width:349px) {
+    #main {
+        display: none;
+    }
+
+    #main__secciones {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width:350px) and (max-width:421px) {
+
+    #main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "menu_grid menu_grid"
+            "contenedor contenedor"
+            "footer footer";
+    }
+
+    .cabecero {
+        display: none;
+    }
+
+    .cabecero__menu {
+        display: flex;
+    }
+
+    .cabecero__menu--sm {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .subir {
+        right: -24px;
+        bottom: 75px;
+        height: 70px;
+        width: 70px;
+    }
+
+    .contenedor {
+        min-width: 200px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .contenedor__tarjetas--info {
+        width: 260px;
+        height: 580px;
+        padding: 20px;
+        border-radius: $bordes;
+    }
+
+    .contenedor__tarjetas--lg {
+        width: 350px;
+        height: 680px;
+    }
+
+    .contenedor--invertido {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contenedor__galeria {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .contenedor__galeria--index {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        grid-template-areas:
+            "grupo1"
+            "grupo2"
+            "grupo3";
+    }
+
+    // INICIO Imagenes
+    .imagenes__nosotros {
+        width: 300px;
+        height: auto;
+    }
+
+    .imagenes__logo {
+        height: 80px;
+    }
+
+    .imagenes__servicios--1 {
+        width: 200px;
+    }
+
+    .imagenes__servicios--4 {
+        display: none;
+    }
+
+    .imagenes__servicios--5 {
+        display: none;
+    }
+
+    .imagenes__servicios--6 {
+        display: none;
+    }
+
+    // FIN Imagenes
+
+    /* Formuario */
+    .formulario--lg {
+        width: 350px;
+    }
+
+    .mapa {
+        width: 300px;
+        height: 200px;
+    }
+
+    .titulo__menu--sm {
+        font-size: $tTitulos_sm;
+        padding-left: 18px;
+    }
+
+    .contenedor__titulo {
+        font-size: $tTitulos_ms;
+        text-align: center;
+    }
+
+    .contenedor__carrusel {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .oculto1 {
+        display: none;
+    }
+
+    .oculto2 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:422px) and (max-width:550px) {
+
+    #main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "menu_grid menu_grid"
+            "contenedor contenedor"
+            "footer footer";
+    }
+
+    .cabecero {
+        display: none;
+    }
+
+    .cabecero__menu {
+        display: flex;
+    }
+
+    .cabecero__menu--sm {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contenedor--invertido {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contenedor__galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .contenedor__galeria--index {
+        display: grid;
+        grid-template-columns: 1fr 1f;
+        gap: 5px;
+        grid-template-areas:
+            "grupo1 grupo2"
+            "grupo3 grupo4"
+            "grupo5 grupo6";
+    }
+
+    .contenedor__tarjetas--info {
+        width: 350px;
+        height: 480px;
+        padding: 30px;
+        margin: 40px;
+    }
+
+    .contenedor__titulo {
+        font-size: $tTitulos_m;
+        text-align: center;
+    }
+
+    .titulo__menu--sm {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .imagenes__nosotros {
+        width: 300px;
+        height: auto;
+    }
+
+    .imagenes__servicios--1 {
+        width: 200px;
+    }
+
+    .imagenes__logo {
+        height: 100px;
+    }
+
+    .formulario--lg {
+        width: 400px;
+    }
+
+    .mapa {
+        width: 400px;
+        height: 300px;
+    }
+
+    .subir {
+        right: -23px;
+        bottom: 79px;
+        height: 70px;
+        width: 70px;
+    }
+
+    .oculto1 {
+        display: none;
+    }
+
+    .oculto2 {
+        display: none;
+    }
+}
+
+/*  */
+@media only screen and (min-width:551px) and (max-width:767px) {
+
+    #main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "menu_grid menu_grid"
+            "contenedor contenedor"
+            "footer footer";
+    }
+
+    .cabecero {
+        display: none;
+    }
+
+    .cabecero__menu--sm {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contenedor--invertido {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contenedor__galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .contenedor__galeria--index {
+        display: grid;
+        grid-template-columns: 1fr 1f;
+        gap: 5px;
+        grid-template-areas:
+            "grupo1 grupo2"
+            "grupo3 grupo4"
+            "grupo5 grupo6";
+    }
+
+    .contenedor__carrusel {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .contenedor__titulo {
+        font-size: $tTitulos_m;
+        text-align: center;
+    }
+
+    .titulo__menu--sm {
+        font-size: $tTitulos_s;
+        padding-left: 30px;
+    }
+
+    .imagenes__nosotros {
+        width: 300px;
+        height: auto;
+    }
+
+    .imagenes__logo {
+        height: 110px;
+    }
+
+    .imagenes__servicios--1 {
+        width: 200px;
+    }
+
+
+    /* Fin Formuario */
+    .mapa {
+        width: 500px;
+        height: 300px;
+    }
+
+    .oculto1 {
+        display: none;
+    }
+
+    .oculto2 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1020px) {
+    #main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "menu_grid menu_grid"
+            "contenedor contenedor"
+            "footer footer";
+    }
+
+    .contenedor__galeria {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .contenedor__galeria--index {
+        display: grid;
+        grid-template-columns: 1fr 1f;
+        gap: 5px;
+        grid-template-areas:
+            "grupo1 grupo2"
+            "grupo3 grupo4"
+            "grupo5 grupo6";
+    }
+
+    .contenedor__carrusel {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+
+    .contenedor__titulo--Left {
+        font-size: $tTitulos_lg;
+        width: $anchTitulos_lg;
+        text-align: center;
+    }
+
+    .contenedor__titulo--Right {
+        font-size: $tTitulos_lg;
+        width: $anchTitulos_lg;
+        text-align: center;
+    }
+
+    .cabecero__menu li {
+        padding: 0px 5px 0px 24px;
+    }
+
+    .imagenes__nosotros {
+        width: 300px;
+        height: auto;
+    }
+
+    .imagenes__servicios--1 {
+        width: 200px;
+    }
+
+    .oculto1 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1020px) and (max-width:1168px) {
+    .contenedor__galeria {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .oculto2 {
+        display: none;
+    }
+}

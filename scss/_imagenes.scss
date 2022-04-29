@@ -1,0 +1,70 @@
+// Inicio Imgenes 
+
+.imagenes__nosotros {
+    width: 540px;
+    height: 380px;
+    border-radius: $bordes;
+}
+
+.imagenes__logo {
+    height: 300px;
+    padding-top: 10px;
+}
+
+.imagenes__servicios {
+    width: 200px;
+    border-radius: $bordes;
+
+    &:hover {
+        transition: transform 0.8s;
+        transform: scale(1.5, 1.5);
+    }
+}
+
+.imagenes__servicios--1 {
+    width: 400px;
+    border-radius: $bordes;
+    grid-area: grupo1;
+}
+
+.imagenes__servicios--2 {
+    grid-area: grupo2;
+}
+
+.imagenes__servicios--3 {
+    grid-area: grupo3;
+}
+
+.imagenes__servicios--4 {
+    grid-area: grupo4;
+}
+
+.imagenes__servicios--5 {
+    grid-area: grupo5;
+}
+
+.imagenes__servicios--6 {
+    grid-area: grupo6;
+}
+
+.imagenes__clientes {
+    img {
+        border-radius: 100%;
+        width: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.imagenes__clientes--lg {
+    img {
+        border-radius: $bordes;
+        background: $color5;
+        width: 200px;
+        height: 180px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+//Fin Imagenes

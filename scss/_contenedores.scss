@@ -1,0 +1,130 @@
+/* Contenedores */
+.contenedor {
+    display: grid;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contenedor__color1 {
+    background-color: $color1;
+    color: $colorFuente1;
+}
+
+.contenedor__color2 {
+    background-color: $color2;
+    color: $colorFuente2;
+}
+
+.contenedor__color3 {
+    background-color: $color3;
+    color: $colorFuente2;
+}
+
+.contenedor__color4 {
+    background-color: $color4;
+    color: $colorFuente2;
+}
+
+.contenedor__titulo--Left {
+    font-size: $tTitulos_lg;
+    width: $anchTitulos_lg;
+    text-align: $lTitutlos;
+}
+
+.contenedor__titulo--Right {
+    font-size: $tTitulos_lg;
+    width: $anchTitulos_lg;
+    text-align: $rTitulos;
+}
+
+.contenedor__titulo--Center {
+    font-size: $tTitulos_lg;
+}
+
+.contenedor__cajas {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contenedor__galeria {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    padding: 20px;
+    gap: 10px;
+}
+
+.contenedor__galeria--index {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+    gap: 5px;
+    grid-template-areas:
+        "grupo1 grupo1 grupo2"
+        "grupo1 grupo1 grupo3"
+        "grupo4 grupo5 grupo6";
+}
+
+.contenendor__galeria--items {
+    width: 200px;
+    height: 200px;
+    border-radius: $bordes;
+    box-shadow: -3px 2px 11px 0px $colorFuente1;
+    &:hover {
+        transition-delay: 10s;
+        transition: transform 0.8s;
+        transform: scale(1.5, 1.5);
+    }
+}
+
+.contenedor__carrusel{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.contenedor__tarjetas {
+    display: inline-flex;
+    min-width: 200px;
+    width: 300px;
+    height: 370px;
+    border-radius: 25px;
+    color: #2c2b2b;
+    padding: 20px;
+    margin: 40px 10px 60px 10px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor__tarjetas--lg {
+    width: 400px;
+    height: 670px;
+}
+
+.contenedor__tarjetas--info {
+    width: 540px;
+    height: 380px;
+    padding: 30px;
+    margin: 40px;
+    border-radius: $bordes;
+}
+
+.contenedor__tarjetas--sm {
+    width: 170px;
+    height: 120px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: $bordes;
+}
+
+.contenedor__tarjetas li {
+    padding: 0px 40px 0px 40px;
+}
+
+/* Fin Contenedores */
