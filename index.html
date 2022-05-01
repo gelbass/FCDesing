@@ -62,39 +62,51 @@
 
         <div id="container__index">
             <!-- NOSOTROS -->
-            <section class="contenedor contenedor__color1" id="nosotros">
-                <div class="contenedor__cajas">
-                    <h2 class="contenedor__titulo contenedor__titulo--Left">Nosotros</h2>
-                    <img class="imagenes__nosotros" src="./img/Nosotros.jpg" alt="nosotros">
+            <section class=" contenedor contenedor__color1" id="nosotros">
+                <div class="container-fluid">
+                    <div class="contenedor__cajas row">
+                        <div class="col-sm">
+                            <h2 class="contenedor__titulo contenedor__titulo--Left">Nosotros</h2>
+                        </div>
+                        <div class="col-sm">
+                            <img class="imagenes__nosotros img-fluid" src="./img/Nosotros.jpg" alt="nosotros">
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- FIN NOSOTROS -->
 
             <!-- SERVICIOS -->
-            <section class="contenedor contenedor__color2" id="servicios">
-                <div class="contenedor--invertido contenedor__cajas">
-                    <div class="contenedor__galeria--index">
-                        <img src="./img/servicios1.jpg" class="imagenes__servicios imagenes__servicios--1"
-                            alt="servicios">
-                        <img src="./img/servicios2.jpg" class="imagenes__servicios imagenes__servicios--2"
-                            alt="servicios">
-                        <img src="./img/servicios3.jpg" class="imagenes__servicios imagenes__servicios--3"
-                            alt="servicios">
-                        <img src="./img/servicios4.jpg" class="imagenes__servicios imagenes__servicios--4"
-                            alt="servicios">
-                        <img src="./img/servicios5.jpg" class="imagenes__servicios imagenes__servicios--5"
-                            alt="servicios">
-                        <img src="./img/servicios6.jpg" class="imagenes__servicios imagenes__servicios--6"
-                            alt="servicios">
+            <section class=" contenedor contenedor__color2" id="servicios">
+                <div class="container-fluid ">
+                    <div class="contenedor--invertido contenedor__cajas row">
+                        <div class="col">
+                            <div class="contenedor__galeria--index">
+                                <img src="./img/servicios1.jpg" class="imagenes__servicios imagenes__servicios--1"
+                                    alt="servicios">
+                                <img src="./img/servicios2.jpg" class="imagenes__servicios imagenes__servicios--2"
+                                    alt="servicios">
+                                <img src="./img/servicios3.jpg" class="imagenes__servicios imagenes__servicios--3"
+                                    alt="servicios">
+                                <img src="./img/servicios4.jpg" class="imagenes__servicios imagenes__servicios--4"
+                                    alt="servicios">
+                                <img src="./img/servicios5.jpg" class="imagenes__servicios imagenes__servicios--5"
+                                    alt="servicios">
+                                <img src="./img/servicios6.jpg" class="imagenes__servicios imagenes__servicios--6"
+                                    alt="servicios">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h2 class="contenedor__titulo">Nuestros Servicios</h2>
+                        </div>
                     </div>
-                    <h2 class="contenedor__titulo contenedor__titulo--Right">Nuestros Servicios</h2>
                 </div>
             </section>
             <!-- FIN SERVICIOS -->
 
             <!-- NUESTROS CLIENTES -->
-            <section class="contenedor contenedor__color3" id="clientes">
-                <h2 class="contenedor__titulo contenedor__titulo--Center">Nuestros Clientes</h2>
+            <section class="container-fluid contenedor contenedor__color3" id="clientes">
+                <h2 class="contenedor__titulo ">Nuestros Clientes</h2>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -253,7 +265,6 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-
                             <div class="contenedor__tarjetas contenedor__color1">
                                 <h3>Mayin</h3>
                                 <div class="imagenes__clientes">
@@ -320,28 +331,36 @@
 
             <!-- SUSCRIPCION -->
             <section id="contacto">
-                <div class="contenedor contenedor__color4">
-                    <h2 class="contenedor__titulo contenedor__titulo--Center">Suscribete</h2>
+                <div class="container-fluid contenedor contenedor__color4">
+                    <h2 class="contenedor__titulo">Suscribete</h2>
                     <form class="formulario formulario--lg" action="">
                         <div class="form-group row">
                             <label class="col-sm-2 form-label" for="nombre">Nombre </label>
-                            <input class="formulario__input form-control col-sm-10" type="text" name="nombre"
-                                id="nombre" placeholder="Ingrese Nombre" required>
+                            <div class="col-sm-10">
+                                <input class="formulario__input form-control" type="text" name="nombre" id="nombre"
+                                    placeholder="Ingrese Nombre" required>
+                            </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-2 form-label" for="apellido">Apellido</label>
-                            <input class="formulario__input form-control col-sm-10" type="text" name="apellido"
-                                id="apellido" placeholder="Ingrese Apellido" required>
+                            <div class="col-sm-10">
+                                <input class="formulario__input form-control" type="text" name="apellido" id="apellido"
+                                    placeholder="Ingrese Apellido" required>
+                            </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-2 form-label" for="email">Email</label>
-                            <input class="formulario__input form-control col-sm-10" type="email" name="email" id="email"
-                                placeholder="Ingrese email" required>
+                            <div class="col-sm-10">
+                                <input class="formulario__input form-control" type="email" name="email" id="email"
+                                    placeholder="Ingrese email" required>
+                            </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-2 form-label" for="mensaje">Mensaje</label>
-                            <textarea class="formulario__input form-control col-sm-10" name="mensaje" id="mensaje"
-                                cols="20" rows="4" placeholder="Ingrese mensaje"></textarea>
+                            <div class="col-sm-10">
+                                <textarea class="formulario__input form-control" name="mensaje" id="mensaje" cols="20"
+                                    rows="4" placeholder="Ingrese mensaje"></textarea>
+                            </div>
                         </div>
                         <hr>
                         <div class="form-check">
@@ -358,7 +377,7 @@
         </div>
 
         <!-- FOOTER -->
-        <footer class="pie" id="footer">
+        <footer class="container-fluid pie" id="footer">
             <div>
                 <strong>@Germán Lacruz 2022</strong>
             </div>
@@ -385,7 +404,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
->>>>>>> desarrollo_1
 </body>
 
 </html>

@@ -129,9 +129,8 @@ hr {
   display: grid;
   justify-content: space-around;
   text-align: center;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .contenedor__color1 {
@@ -154,19 +153,7 @@ hr {
   color: #000000;
 }
 
-.contenedor__titulo--Left {
-  font-size: 50px;
-  width: 350px;
-  text-align: left;
-}
-
-.contenedor__titulo--Right {
-  font-size: 50px;
-  width: 350px;
-  text-align: right;
-}
-
-.contenedor__titulo--Center {
+.contenedor__titulo {
   font-size: 50px;
 }
 
@@ -188,10 +175,9 @@ hr {
 
 .contenedor__galeria--index {
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr; */
   gap: 5px;
   grid-template-areas: "grupo1 grupo1 grupo2" "grupo1 grupo1 grupo3" "grupo4 grupo5 grupo6";
+  margin: 15px;
 }
 
 .contenendor__galeria--items {
@@ -254,7 +240,6 @@ hr {
 /* Fin Contenedores */
 /* Formuario */
 .formulario {
-  /* display: inline-block; */
   margin: 10px;
   padding: 30px;
   border: 1px solid #a4eae0;
@@ -302,8 +287,6 @@ hr {
 }
 
 .imagenes__nosotros {
-  width: 540px;
-  height: 380px;
   border-radius: 25px;
 }
 
@@ -317,6 +300,7 @@ hr {
   border-radius: 25px;
 }
 .imagenes__servicios:hover {
+  transition-delay: 10s;
   transition: transform 0.8s;
   transform: scale(1.5, 1.5);
 }
@@ -389,7 +373,7 @@ hr {
   background-color: #eaeaea;
   margin: 10px;
   padding: 10px;
-  width: 600px;
+  width: 450px;
   height: 450px;
 }
 
@@ -455,6 +439,11 @@ hr {
     flex-direction: column-reverse;
   }
 
+  .contenedor__carrusel {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .contenedor__galeria {
     display: grid;
     grid-template-columns: 1fr;
@@ -478,8 +467,12 @@ hr {
     height: 80px;
   }
 
+  .imagenes__servicios {
+    width: 150px;
+  }
+
   .imagenes__servicios--1 {
-    width: 200px;
+    width: 150px;
   }
 
   .imagenes__servicios--4 {
@@ -496,11 +489,11 @@ hr {
 
   /* Formuario */
   .formulario--lg {
-    width: 350px;
+    width: 300px;
   }
 
   .mapa {
-    width: 300px;
+    width: 270px;
     height: 200px;
   }
 
@@ -512,11 +505,6 @@ hr {
   .contenedor__titulo {
     font-size: 45px;
     text-align: center;
-  }
-
-  .contenedor__carrusel {
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   .oculto1 {
@@ -568,6 +556,11 @@ hr {
     grid-template-areas: "grupo1 grupo2" "grupo3 grupo4" "grupo5 grupo6";
   }
 
+  .contenedor__carrusel {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .contenedor__tarjetas--info {
     width: 350px;
     height: 480px;
@@ -590,8 +583,12 @@ hr {
     height: auto;
   }
 
+  .imagenes__servicios {
+    width: 150px;
+  }
+
   .imagenes__servicios--1 {
-    width: 200px;
+    width: 150px;
   }
 
   .imagenes__logo {
@@ -599,11 +596,11 @@ hr {
   }
 
   .formulario--lg {
-    width: 400px;
+    width: 380px;
   }
 
   .mapa {
-    width: 400px;
+    width: 330px;
     height: 300px;
   }
 
@@ -684,13 +681,21 @@ hr {
     height: 110px;
   }
 
+  .imagenes__servicios {
+    width: 150px;
+  }
+
   .imagenes__servicios--1 {
-    width: 200px;
+    width: 150px;
+  }
+
+  .formulario--lg {
+    width: 500px;
   }
 
   /* Fin Formuario */
   .mapa {
-    width: 500px;
+    width: 450px;
     height: 300px;
   }
 
@@ -755,6 +760,11 @@ hr {
 
   .oculto1 {
     display: none;
+  }
+
+  .mapa {
+    width: 450px;
+    height: 300px;
   }
 }
 @media only screen and (min-width: 1020px) and (max-width: 1168px) {

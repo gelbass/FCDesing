@@ -1,8 +1,6 @@
 // Inicio Imgenes 
 
 .imagenes__nosotros {
-    width: 540px;
-    height: 380px;
     border-radius: $bordes;
 }
 
@@ -16,6 +14,7 @@
     border-radius: $bordes;
 
     &:hover {
+        transition-delay: 10s;
         transition: transform 0.8s;
         transform: scale(1.5, 1.5);
     }

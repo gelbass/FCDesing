@@ -65,6 +65,10 @@
         display: flex;
         flex-direction: column-reverse;
     }
+    .contenedor__carrusel {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
     .contenedor__galeria {
         display: grid;
@@ -93,8 +97,11 @@
         height: 80px;
     }
 
+    .imagenes__servicios {
+        width: 150px;
+    }
     .imagenes__servicios--1 {
-        width: 200px;
+        width: 150px;
     }
 
     .imagenes__servicios--4 {
@@ -113,11 +120,11 @@
 
     /* Formuario */
     .formulario--lg {
-        width: 350px;
+        width: 300px;
     }
 
     .mapa {
-        width: 300px;
+        width: 270px;
         height: 200px;
     }
 
@@ -129,11 +136,6 @@
     .contenedor__titulo {
         font-size: $tTitulos_ms;
         text-align: center;
-    }
-
-    .contenedor__carrusel {
-        padding-left: 50px;
-        padding-right: 50px;
     }
 
     .oculto1 {
@@ -193,6 +195,11 @@
             "grupo5 grupo6";
     }
 
+    .contenedor__carrusel {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .contenedor__tarjetas--info {
         width: 350px;
         height: 480px;
@@ -215,8 +222,11 @@
         height: auto;
     }
 
+    .imagenes__servicios {
+        width: 150px;
+    }
     .imagenes__servicios--1 {
-        width: 200px;
+        width: 150px;
     }
 
     .imagenes__logo {
@@ -224,11 +234,11 @@
     }
 
     .formulario--lg {
-        width: 400px;
+        width: 380px;
     }
 
     .mapa {
-        width: 400px;
+        width: 330px;
         height: 300px;
     }
 
@@ -317,14 +327,19 @@
         height: 110px;
     }
 
+    .imagenes__servicios {
+        width: 150px;
+    }
     .imagenes__servicios--1 {
-        width: 200px;
+        width: 150px;
     }
 
-
+    .formulario--lg {
+        width: 500px;
+    }
     /* Fin Formuario */
     .mapa {
-        width: 500px;
+        width: 450px;
         height: 300px;
     }
 
@@ -399,6 +414,10 @@
     .oculto1 {
         display: none;
     }
+    .mapa {
+        width: 450px;
+        height: 300px;
+    }
 }
 
 @media only screen and (min-width:1020px) and (max-width:1168px) {
@@ -408,7 +427,6 @@
         padding: 20px;
         gap: 10px;
     }
-
     .oculto2 {
         display: none;
     }
