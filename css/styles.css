@@ -290,6 +290,7 @@ hr {
 
 .imagenes__nosotros {
   border-radius: 25px;
+  box-shadow: -3px 2px 11px 0px #2c2b2b;
 }
 
 .imagenes__logo {
@@ -300,6 +301,7 @@ hr {
 .imagenes__servicios {
   width: 200px;
   border-radius: 25px;
+  box-shadow: 0px 0px 6px 0px #2c2b2b;
   filter: grayscale(50%);
 }
 .imagenes__servicios:hover {
@@ -340,11 +342,13 @@ hr {
   width: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
+  box-shadow: 0px 0px 6px 0px #2c2b2b;
 }
 
 .imagenes__clientes--lg img {
   border-radius: 25px;
   background: #FFA4b3;
+  box-shadow: 0px 0px 6px 0px #2c2b2b;
   width: 200px;
   height: 180px;
   margin-top: 10px;

@@ -2,6 +2,7 @@
 
 .imagenes__nosotros {
     border-radius: $bordes;
+    box-shadow: -3px 2px 11px 0px $colorFuente1;
 }
 
 .imagenes__logo {
@@ -12,11 +13,11 @@
 .imagenes__servicios {
     width: 200px;
     border-radius: $bordes;
+    box-shadow: 0px 0px 6px 0px $colorFuente1;
     filter: grayscale(50%);
     &:hover {
         transition-delay: 10s;
         transition: transform 0.8s;
-        // transform: scale(1.5, 1.5);
         transform:scale(0.9);
         filter: grayscale(0%);
     }
@@ -54,6 +55,7 @@
         width: 100px;
         margin-top: 10px;
         margin-bottom: 10px;
+        box-shadow: 0px 0px 6px 0px $colorFuente1;
     }
 }
 
@@ -61,6 +63,7 @@
     img {
         border-radius: $bordes;
         background: $color5;
+        box-shadow: 0px 0px 6px 0px $colorFuente1;
         width: 200px;
         height: 180px;
         margin-top: 10px;
