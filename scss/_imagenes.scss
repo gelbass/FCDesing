@@ -12,11 +12,13 @@
 .imagenes__servicios {
     width: 200px;
     border-radius: $bordes;
-
+    filter: grayscale(50%);
     &:hover {
         transition-delay: 10s;
         transition: transform 0.8s;
-        transform: scale(1.5, 1.5);
+        // transform: scale(1.5, 1.5);
+        transform:scale(0.9);
+        filter: grayscale(0%);
     }
 }
 

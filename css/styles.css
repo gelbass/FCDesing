@@ -93,7 +93,7 @@ hr {
 
 .cabecero__menu__items {
   text-decoration: none;
-  color: #8A866F;
+  color: #c0bfbf;
 }
 .cabecero__menu__items:hover {
   font-weight: bold;
@@ -149,7 +149,7 @@ hr {
 }
 
 .contenedor__color4 {
-  background-color: #8A866F;
+  background-color: #c0bfbf;
   color: #000000;
 }
 
@@ -217,10 +217,8 @@ hr {
 }
 
 .contenedor__tarjetas--info {
-  width: 540px;
-  height: 380px;
   padding: 30px;
-  margin: 40px;
+  margin-top: 40px;
   border-radius: 25px;
 }
 
@@ -235,6 +233,10 @@ hr {
 
 .contenedor__tarjetas li {
   padding: 0px 40px 0px 40px;
+}
+
+.bg {
+  background-color: #1a1e1f;
 }
 
 /* Fin Contenedores */
@@ -298,11 +300,13 @@ hr {
 .imagenes__servicios {
   width: 200px;
   border-radius: 25px;
+  filter: grayscale(50%);
 }
 .imagenes__servicios:hover {
   transition-delay: 10s;
   transition: transform 0.8s;
-  transform: scale(1.5, 1.5);
+  transform: scale(0.9);
+  filter: grayscale(0%);
 }
 
 .imagenes__servicios--1 {
@@ -422,13 +426,6 @@ hr {
     padding-bottom: 50px;
   }
 
-  .contenedor__tarjetas--info {
-    width: 260px;
-    height: 580px;
-    padding: 20px;
-    border-radius: 25px;
-  }
-
   .contenedor__tarjetas--lg {
     width: 350px;
     height: 680px;
@@ -458,11 +455,6 @@ hr {
     grid-template-areas: "grupo1" "grupo2" "grupo3";
   }
 
-  .imagenes__nosotros {
-    width: 300px;
-    height: auto;
-  }
-
   .imagenes__logo {
     height: 80px;
   }
@@ -487,7 +479,6 @@ hr {
     display: none;
   }
 
-  /* Formuario */
   .formulario--lg {
     width: 300px;
   }
@@ -561,13 +552,6 @@ hr {
     padding-right: 20px;
   }
 
-  .contenedor__tarjetas--info {
-    width: 350px;
-    height: 480px;
-    padding: 30px;
-    margin: 40px;
-  }
-
   .contenedor__titulo {
     font-size: 45px;
     text-align: center;
@@ -576,11 +560,6 @@ hr {
   .titulo__menu--sm {
     font-size: 20px;
     padding-left: 20px;
-  }
-
-  .imagenes__nosotros {
-    width: 300px;
-    height: auto;
   }
 
   .imagenes__servicios {
@@ -672,11 +651,6 @@ hr {
     padding-left: 30px;
   }
 
-  .imagenes__nosotros {
-    width: 300px;
-    height: auto;
-  }
-
   .imagenes__logo {
     height: 110px;
   }
@@ -747,11 +721,6 @@ hr {
 
   .cabecero__menu li {
     padding: 0px 5px 0px 24px;
-  }
-
-  .imagenes__nosotros {
-    width: 300px;
-    height: auto;
   }
 
   .imagenes__servicios--1 {

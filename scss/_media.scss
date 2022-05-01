@@ -49,13 +49,6 @@
         padding-bottom: 50px;
     }
 
-    .contenedor__tarjetas--info {
-        width: 260px;
-        height: 580px;
-        padding: 20px;
-        border-radius: $bordes;
-    }
-
     .contenedor__tarjetas--lg {
         width: 350px;
         height: 680px;
@@ -65,6 +58,7 @@
         display: flex;
         flex-direction: column-reverse;
     }
+
     .contenedor__carrusel {
         padding-left: 10px;
         padding-right: 10px;
@@ -88,10 +82,6 @@
     }
 
     // INICIO Imagenes
-    .imagenes__nosotros {
-        width: 300px;
-        height: auto;
-    }
 
     .imagenes__logo {
         height: 80px;
@@ -100,6 +90,7 @@
     .imagenes__servicios {
         width: 150px;
     }
+
     .imagenes__servicios--1 {
         width: 150px;
     }
@@ -118,11 +109,13 @@
 
     // FIN Imagenes
 
-    /* Formuario */
+    // Formulario
+
     .formulario--lg {
         width: 300px;
     }
 
+    //FIN Formulario
     .mapa {
         width: 270px;
         height: 200px;
@@ -200,13 +193,6 @@
         padding-right: 20px;
     }
 
-    .contenedor__tarjetas--info {
-        width: 350px;
-        height: 480px;
-        padding: 30px;
-        margin: 40px;
-    }
-
     .contenedor__titulo {
         font-size: $tTitulos_m;
         text-align: center;
@@ -217,14 +203,10 @@
         padding-left: 20px;
     }
 
-    .imagenes__nosotros {
-        width: 300px;
-        height: auto;
-    }
-
     .imagenes__servicios {
         width: 150px;
     }
+
     .imagenes__servicios--1 {
         width: 150px;
     }
@@ -318,11 +300,6 @@
         padding-left: 30px;
     }
 
-    .imagenes__nosotros {
-        width: 300px;
-        height: auto;
-    }
-
     .imagenes__logo {
         height: 110px;
     }
@@ -330,6 +307,7 @@
     .imagenes__servicios {
         width: 150px;
     }
+
     .imagenes__servicios--1 {
         width: 150px;
     }
@@ -337,6 +315,7 @@
     .formulario--lg {
         width: 500px;
     }
+
     /* Fin Formuario */
     .mapa {
         width: 450px;
@@ -402,11 +381,6 @@
         padding: 0px 5px 0px 24px;
     }
 
-    .imagenes__nosotros {
-        width: 300px;
-        height: auto;
-    }
-
     .imagenes__servicios--1 {
         width: 200px;
     }
@@ -414,6 +388,7 @@
     .oculto1 {
         display: none;
     }
+
     .mapa {
         width: 450px;
         height: 300px;
@@ -427,6 +402,7 @@
         padding: 20px;
         gap: 10px;
     }
+
     .oculto2 {
         display: none;
     }

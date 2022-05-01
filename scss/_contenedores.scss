@@ -93,10 +93,8 @@
 }
 
 .contenedor__tarjetas--info {
-    width: 540px;
-    height: 380px;
     padding: 30px;
-    margin: 40px;
+    margin-top: 40px;
     border-radius: $bordes;
 }
 
@@ -113,4 +111,7 @@
     padding: 0px 40px 0px 40px;
 }
 
+.bg{
+    background-color: $colorBackground;
+}
 /* Fin Contenedores */
