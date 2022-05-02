@@ -457,6 +457,7 @@ hr {
     grid-template-columns: 1fr;
     gap: 5px;
     grid-template-areas: "grupo1" "grupo2" "grupo3";
+    justify-items: center;
   }
 
   .imagenes__logo {
@@ -694,7 +695,7 @@ hr {
 
   .contenedor__galeria {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 20px;
     gap: 10px;
   }
@@ -743,7 +744,7 @@ hr {
 @media only screen and (min-width: 1020px) and (max-width: 1168px) {
   .contenedor__galeria {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 20px;
     gap: 10px;
   }
