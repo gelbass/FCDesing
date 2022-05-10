@@ -462,6 +462,7 @@ hr {
     grid-template-columns: 1fr;
     gap: 5px;
     grid-template-areas: "grupo1" "grupo2" "grupo3";
+    justify-items: center;
   }
 
   .imagenes__logo {
