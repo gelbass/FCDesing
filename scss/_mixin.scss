@@ -23,6 +23,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 // Imagenes
 @mixin imagenes ($border,$shadow,$width,$height) {
     border-radius: $border;
