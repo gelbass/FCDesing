@@ -11,9 +11,7 @@
 }
 
 .imagenes__servicios {
-    width: 200px;
-    border-radius: $bordes;
-    box-shadow: 0px 0px 6px 0px $colorFuente1;
+    @include imagenes($bordes,0px 0px 6px 0px $colorFuente1,200px,auto);
     filter: grayscale(50%);
     &:hover {
         transition-delay: 10s;
@@ -29,43 +27,31 @@
     grid-area: grupo1;
 }
 
-.imagenes__servicios--2 {
-    grid-area: grupo2;
+$imagenes-grid-area:(
+    servicios--2: grupo2,
+    servicios--3: grupo3,
+    servicios--4: grupo4,
+    servicios--5: grupo5,
+    servicios--6: grupo6,
+);
+@each $i, $area in $imagenes-grid-area {
+    .imagenes__#{$i} {
+        grid-area: $area;
+    }
 }
 
-.imagenes__servicios--3 {
-    grid-area: grupo3;
-}
-
-.imagenes__servicios--4 {
-    grid-area: grupo4;
-}
-
-.imagenes__servicios--5 {
-    grid-area: grupo5;
-}
-
-.imagenes__servicios--6 {
-    grid-area: grupo6;
-}
 
 .imagenes__clientes {
     img {
-        border-radius: 100%;
-        width: 100px;
+        @include imagenes(100%,0px 0px 6px 0px $colorFuente1,100px,auto);
         margin-top: 10px;
         margin-bottom: 10px;
-        box-shadow: 0px 0px 6px 0px $colorFuente1;
     }
 }
 
 .imagenes__clientes--lg {
     img {
-        border-radius: $bordes;
-        background: $color5;
-        box-shadow: 0px 0px 6px 0px $colorFuente1;
-        width: 200px;
-        height: 180px;
+        @include imagenes(25px,0px 0px 6px 0px $colorFuente1,200px,180px);
         margin-top: 10px;
         margin-bottom: 10px;
     }

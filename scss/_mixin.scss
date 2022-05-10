@@ -1,0 +1,32 @@
+// Maquetados
+@mixin grid-maquetado ($display, $columns, $area){
+    display: $display;
+    grid-template-columns: $columns;
+    grid-template-areas: $area;
+}
+// Contenedores
+@mixin contenedor-w-h($width,$height) {
+    width: $width;
+    height: $height;
+}
+@mixin contenedor-wh-p-m($width,$height,$paddin,$margin) {
+    @include contenedor-w-h($width,$height);
+    padding: $paddin;
+    margin: $margin;
+}
+
+@mixin contenedor-tarjetas() {
+    display: inline-flex;
+    border-radius: 25px;
+    color: #2c2b2b;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+// Imagenes
+@mixin imagenes ($border,$shadow,$width,$height) {
+    border-radius: $border;
+    box-shadow: $shadow;
+    width: $width;
+    height: $height;
+}

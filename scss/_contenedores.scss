@@ -2,29 +2,24 @@
 .contenedor {
     display: grid;
     justify-content: space-around;
+    justify-items: center;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.contenedor__color1 {
-    background-color: $color1;
-    color: $colorFuente1;
-}
+$coloresBg:(
+    color1:$color1,
+    color2:$color2,
+    color3:$color3,
+    color4:$color4,
+);
 
-.contenedor__color2 {
-    background-color: $color2;
-    color: $colorFuente2;
-}
-
-.contenedor__color3 {
-    background-color: $color3;
-    color: $colorFuente2;
-}
-
-.contenedor__color4 {
-    background-color: $color4;
-    color: $colorFuente2;
+@each $i,$color in $coloresBg {
+    .contenedor__#{$i}{
+        background-color: $color;
+        color: $colorFuente2;
+    }
 }
 
 .contenedor__titulo {
@@ -58,8 +53,7 @@
 }
 
 .contenendor__galeria--items {
-    width: 200px;
-    height: 200px;
+    @include contenedor-w-h(200px,200px);
     border-radius: $bordes;
     box-shadow: -3px 2px 11px 0px $colorFuente1;
     &:hover {
@@ -74,17 +68,10 @@
     padding-right: 100px;
 }
 .contenedor__tarjetas {
-    display: inline-flex;
+    @include contenedor-tarjetas();
+    @include contenedor-wh-p-m(300px,370px,20px,40px 10px 60px 10px);
     min-width: 200px;
-    width: 300px;
-    height: 370px;
-    border-radius: 25px;
-    color: #2c2b2b;
-    padding: 20px;
-    margin: 40px 10px 60px 10px;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
+    
     &:hover {
         transition-delay: 10s;
         transition: transform 0.8s;
@@ -93,8 +80,14 @@
 }
 
 .contenedor__tarjetas--lg {
-    width: 400px;
-    height: 670px;
+    @include contenedor-tarjetas();
+    @include contenedor-wh-p-m(350px,600px,20px,40px 10px 60px 10px);
+    
+}
+.contenedor__tarjetas--parrafos{
+    @include contenedor-tarjetas();
+    @include contenedor-wh-p-m(300px,370px,20px,40px 10px 60px 10px);
+    justify-content:center;
 }
 
 .contenedor__tarjetas--info {
@@ -104,11 +97,7 @@
 }
 
 .contenedor__tarjetas--sm {
-    width: 170px;
-    height: 120px;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    @include contenedor-wh-p-m(240px,145px,20px,10px 0px 10px 0px);
     border-radius: $bordes;
 }
 

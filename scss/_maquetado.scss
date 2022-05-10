@@ -13,13 +13,10 @@ hr {
 
 /* INICIO MAQUETADO CON GRID */
 #main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "header header"
-        "menu_grid menu_grid"
-        "contenedor contenedor"
-        "footer footer";
+    @include grid-maquetado(grid,1fr 1fr,"header header"
+    "menu_grid menu_grid"
+    "contenedor contenedor"
+    "footer footer");
 }
 
 #header {
@@ -35,22 +32,16 @@ hr {
 }
 
 #container__index {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "nosotros"
-        "servicios"
-        "clientes"
-        "contacto";
+    @include grid-maquetado(grid,1fr,"nosotros"
+    "servicios"
+    "clientes"
+    "contacto");
     grid-area: contenedor;
 }
 
 #container__individual {
-    display: grid;
-    grid-template-columns: 1fr;
+    @include grid-maquetado(grid,1fr,"nosotros");
     grid-auto-flow: row;
-    grid-template-areas:
-        "nosotros";
     grid-area: contenedor;
 }
 
@@ -80,16 +71,14 @@ hr {
 }
 
 .cabecero__menu {
+    @extend .cabecero;
     display: flex;
     position: sticky;
     top: 0px;
     padding-top: 10px;
     padding-bottom: 5px;
-    background-color: $colorHeader;
-    text-align: center;
     align-items: center;
     justify-content: space-evenly;
-    z-index: 1;
 
     li {
         display: inline-block;

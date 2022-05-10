@@ -13,12 +13,9 @@
 @media only screen and (min-width:350px) and (max-width:421px) {
 
     #main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "menu_grid menu_grid"
+        @include grid-maquetado(grid, 1fr 1fr, "menu_grid menu_grid"
             "contenedor contenedor"
-            "footer footer";
+            "footer footer");
     }
 
     .cabecero {
@@ -50,8 +47,7 @@
     }
 
     .contenedor__tarjetas--lg {
-        width: 350px;
-        height: 680px;
+        @include contenedor-w-h(350px, 680px);
     }
 
     .contenedor--invertido {
@@ -72,14 +68,11 @@
     }
 
     .contenedor__galeria--index {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 5px;
-        grid-template-areas:
-            "grupo1"
+        @include grid-maquetado(grid, 1fr, "grupo1"
             "grupo2"
-            "grupo3";
-            justify-items: center;
+            "grupo3");
+        gap: 5px;
+        justify-items: center;
     }
 
     // INICIO Imagenes
@@ -118,8 +111,7 @@
 
     //FIN Formulario
     .mapa {
-        width: 270px;
-        height: 200px;
+        @include contenedor-w-h(270px, 200px);
     }
 
     .titulo__menu--sm {
@@ -144,12 +136,9 @@
 @media only screen and (min-width:422px) and (max-width:550px) {
 
     #main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "menu_grid menu_grid"
+        @include grid-maquetado(grid, 1fr 1fr, "menu_grid menu_grid"
             "contenedor contenedor"
-            "footer footer";
+            "footer footer");
     }
 
     .cabecero {
@@ -180,13 +169,10 @@
     }
 
     .contenedor__galeria--index {
-        display: grid;
-        grid-template-columns: 1fr 1f;
-        gap: 5px;
-        grid-template-areas:
-            "grupo1 grupo2"
+        @include grid-maquetado(grid, 1fr 1f, "grupo1 grupo2"
             "grupo3 grupo4"
-            "grupo5 grupo6";
+            "grupo5 grupo6");
+        gap: 5px;
     }
 
     .contenedor__carrusel {
@@ -221,8 +207,7 @@
     }
 
     .mapa {
-        width: 330px;
-        height: 300px;
+        @include contenedor-w-h(330px, 300px);
     }
 
     .subir {
@@ -245,16 +230,16 @@
 @media only screen and (min-width:551px) and (max-width:767px) {
 
     #main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "menu_grid menu_grid"
+        @include grid-maquetado(grid, 1fr 1fr, "menu_grid menu_grid"
             "contenedor contenedor"
-            "footer footer";
+            "footer footer");
     }
 
     .cabecero {
         display: none;
+    }
+    .cabecero__menu {
+        display: flex;
     }
 
     .cabecero__menu--sm {
@@ -277,13 +262,10 @@
     }
 
     .contenedor__galeria--index {
-        display: grid;
-        grid-template-columns: 1fr 1f;
-        gap: 5px;
-        grid-template-areas:
-            "grupo1 grupo2"
+        @include grid-maquetado(grid, 1fr 1f, "grupo1 grupo2"
             "grupo3 grupo4"
-            "grupo5 grupo6";
+            "grupo5 grupo6");
+        gap: 5px;
     }
 
     .contenedor__carrusel {
@@ -319,8 +301,7 @@
 
     /* Fin Formuario */
     .mapa {
-        width: 450px;
-        height: 300px;
+        @include contenedor-w-h(450px, 300px);
     }
 
     .oculto1 {
@@ -334,13 +315,10 @@
 
 @media only screen and (min-width:768px) and (max-width:1020px) {
     #main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "header header"
+        @include grid-maquetado(grid, 1fr 1fr, "header header"
             "menu_grid menu_grid"
             "contenedor contenedor"
-            "footer footer";
+            "footer footer");
     }
 
     .contenedor__galeria {
@@ -351,13 +329,10 @@
     }
 
     .contenedor__galeria--index {
-        display: grid;
-        grid-template-columns: 1fr 1f;
-        gap: 5px;
-        grid-template-areas:
-            "grupo1 grupo2"
+        @include grid-maquetado(grid,1fr 1f,"grupo1 grupo2"
             "grupo3 grupo4"
-            "grupo5 grupo6";
+            "grupo5 grupo6");
+        gap: 5px;
     }
 
     .contenedor__carrusel {
@@ -373,9 +348,7 @@
     }
 
     .contenedor__titulo--Right {
-        font-size: $tTitulos_lg;
-        width: $anchTitulos_lg;
-        text-align: center;
+        @extend .contenedor__titulo--Left;
     }
 
     .cabecero__menu li {
@@ -391,8 +364,7 @@
     }
 
     .mapa {
-        width: 450px;
-        height: 300px;
+        @include contenedor-w-h(450px,300);
     }
 }
 
