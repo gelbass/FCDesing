@@ -9,6 +9,10 @@
     height: 300px;
     padding-top: 10px;
 }
+.imagenes__logo--footer {
+    height: 100px;
+    padding-top: 10px;
+}
 
 .imagenes__servicios {
     @include imagenes($bordes,0px 0px 6px 0px $colorFuente1,200px,auto);

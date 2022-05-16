@@ -106,14 +106,8 @@ hr {
 /* Fin Header */
 /* Footer */
 .pie {
-  display: flex;
-  align-items: center;
-  height: 100px;
   background-color: #000000;
   color: #FFA4b3;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
 }
 
 .pie__contenedor {
@@ -319,6 +313,11 @@ hr {
 
 .imagenes__logo {
   height: 300px;
+  padding-top: 10px;
+}
+
+.imagenes__logo--footer {
+  height: 100px;
   padding-top: 10px;
 }
 
