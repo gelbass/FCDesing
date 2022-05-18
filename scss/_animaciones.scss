@@ -1,0 +1,10 @@
+// Animaciones para el menu
+@keyframes logoInicio {
+    from{height: 500px;}
+    to{height: 300px;}
+}
+
+@keyframes menu {
+    from{opacity: 0%;}
+    to{opacity:100%;}
+}

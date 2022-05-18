@@ -35,9 +35,11 @@ $coloresBg:(
     align-items: center;
 }
 
+// Inicio Galerias
 .contenedor__galeria {
     display: grid;
     grid-template-columns: repeat(5, 2fr);
+    margin-top: 50px;
     padding: 20px;
     gap: 10px;
 }
@@ -67,6 +69,9 @@ $coloresBg:(
     padding-left: 100px;
     padding-right: 100px;
 }
+// Fin Galerias
+
+// Inicio Tarjetas
 .contenedor__tarjetas {
     @include contenedor-tarjetas();
     @include contenedor-wh-p-m(300px,370px,20px,40px 10px 60px 10px);
@@ -105,7 +110,6 @@ $coloresBg:(
     padding: 0px 40px 0px 40px;
 }
 
-.bg{
-    background-color: $colorBackground;
-}
+// Fin Tarjetas
+
 /* Fin Contenedores */
