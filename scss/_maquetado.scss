@@ -43,6 +43,7 @@ hr {
     @include grid-maquetado(grid,1fr,"nosotros");
     grid-auto-flow: row;
     grid-area: contenedor;
+    
 }
 
 #nosotros {
@@ -72,6 +73,7 @@ hr {
 
 .cabecero__menu {
     @extend .cabecero;
+    animation: menu;
     display: flex;
     position: sticky;
     top: 0px;
@@ -83,6 +85,8 @@ hr {
     li {
         display: inline-block;
         padding: 0px 40px 0px 40px;
+        animation: menu;
+        animation-duration: 10s;
     }
 }
 .cabecero__menu--sm{
@@ -91,7 +95,7 @@ hr {
 
 .cabecero__menu__items {
     text-decoration: none;
-    color: $color4;
+    color: $colorFuente2;
 
     &:hover {
         font-weight: bold;
