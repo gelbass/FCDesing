@@ -24,6 +24,7 @@ $coloresBg:(
 
 .contenedor__titulo {
     font-size: $tTitulos_lg;
+    font-weight: bold;;
 }
 
 .contenedor__cajas {
@@ -47,6 +48,7 @@ $coloresBg:(
 .contenedor__galeria--index {
     display: grid;
     gap: 5px;
+    justify-items: center;
     grid-template-areas:
         "grupo1 grupo1 grupo2"
         "grupo1 grupo1 grupo3"
@@ -96,8 +98,7 @@ $coloresBg:(
 }
 
 .contenedor__tarjetas--info {
-    padding: 30px;
-    margin-top: 40px;
+    padding: 28px;
     border-radius: $bordes;
 }
 

@@ -100,7 +100,7 @@ hr {
   display: inline-block;
   padding: 0px 40px 0px 40px;
   animation: menu;
-  animation-duration: 10s;
+  animation-duration: 3s;
 }
 
 .cabecero__menu--sm {
@@ -125,12 +125,17 @@ hr {
 /* Fin Header */
 /* Footer */
 .pie {
-  background-color: #000000;
-  color: #FFA4b3;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
 }
 
 .pie__contenedor {
   font-size: 30px;
+  padding: 20px;
 }
 
 /* Fin Footer */
@@ -155,7 +160,7 @@ hr {
 }
 
 .contenedor__color3 {
-  background-color: #939393;
+  background-color: #ffffff;
   color: #000000;
 }
 
@@ -166,6 +171,7 @@ hr {
 
 .contenedor__titulo {
   font-size: 50px;
+  font-weight: bold;
 }
 
 .contenedor__cajas {
@@ -188,6 +194,7 @@ hr {
 .contenedor__galeria--index {
   display: grid;
   gap: 5px;
+  justify-items: center;
   grid-template-areas: "grupo1 grupo1 grupo2" "grupo1 grupo1 grupo3" "grupo4 grupo5 grupo6";
   margin: 15px;
 }
@@ -256,8 +263,7 @@ hr {
 }
 
 .contenedor__tarjetas--info {
-  padding: 30px;
-  margin-top: 40px;
+  padding: 28px;
   border-radius: 25px;
 }
 
@@ -329,7 +335,7 @@ hr {
 
 .logo {
   animation: logoInicio;
-  animation-duration: 5s;
+  animation-duration: 1.8s;
 }
 
 .imagenes__logo {
@@ -344,8 +350,8 @@ hr {
 
 .imagenes__servicios {
   border-radius: 25px;
-  box-shadow: 0px 0px 6px 0px #2c2b2b;
-  width: 200px;
+  box-shadow: 0px 0px 6px 0px rgba(58, 56, 56, 0.4392156863);
+  width: auto;
   height: auto;
   filter: grayscale(50%);
 }
@@ -357,7 +363,8 @@ hr {
 }
 
 .imagenes__servicios--1 {
-  width: 400px;
+  width: 410px;
+  height: 305px;
   border-radius: 25px;
   grid-area: grupo1;
 }
@@ -417,7 +424,7 @@ hr {
 
 .link {
   text-decoration: none;
-  color: #FFA4b3;
+  color: #000000;
 }
 
 .mapa {
@@ -430,8 +437,13 @@ hr {
   height: 450px;
 }
 
-.bg {
-  background-color: #1a1e1f;
+.carrusel--indicador {
+  background-color: #FFA4b3 !important;
+}
+
+.carrusel--control {
+  color: #FFA4b3;
+  font-size: 40px;
 }
 
 /* Inicio Media Query */
@@ -505,8 +517,6 @@ hr {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "grupo1" "grupo2" "grupo3";
-    gap: 5px;
-    justify-items: center;
   }
 
   .imagenes__logo {
@@ -519,6 +529,7 @@ hr {
 
   .imagenes__servicios--1 {
     width: 150px;
+    height: 112.5px;
   }
 
   .imagenes__servicios--4 {
@@ -598,7 +609,6 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1f;
     grid-template-areas: "grupo1 grupo2" "grupo3 grupo4" "grupo5 grupo6";
-    gap: 5px;
   }
 
   .contenedor__carrusel {
@@ -622,6 +632,7 @@ hr {
 
   .imagenes__servicios--1 {
     width: 150px;
+    height: 112.5px;
   }
 
   .imagenes__logo {
@@ -691,7 +702,6 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1f;
     grid-template-areas: "grupo1 grupo2" "grupo3 grupo4" "grupo5 grupo6";
-    gap: 5px;
   }
 
   .contenedor__carrusel {
@@ -719,6 +729,7 @@ hr {
 
   .imagenes__servicios--1 {
     width: 150px;
+    height: 112.5px;
   }
 
   .formulario--lg {
@@ -746,6 +757,11 @@ hr {
     grid-template-areas: "header header" "menu_grid menu_grid" "contenedor contenedor" "footer footer";
   }
 
+  .contenedor--invertido {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   .contenedor__galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -757,7 +773,6 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1f;
     grid-template-areas: "grupo1 grupo2" "grupo3 grupo4" "grupo5 grupo6";
-    gap: 5px;
   }
 
   .contenedor__carrusel {
@@ -777,6 +792,7 @@ hr {
 
   .imagenes__servicios--1 {
     width: 200px;
+    height: 150px;
   }
 
   .oculto1 {
@@ -788,12 +804,17 @@ hr {
     height: 300;
   }
 }
-@media only screen and (min-width: 1020px) and (max-width: 1168px) {
+@media only screen and (min-width: 1020px) and (max-width: 1200px) {
   .contenedor__galeria {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 20px;
     gap: 10px;
+  }
+
+  .contenedor--invertido {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .oculto2 {

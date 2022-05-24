@@ -86,7 +86,7 @@ hr {
         display: inline-block;
         padding: 0px 40px 0px 40px;
         animation: menu;
-        animation-duration: 10s;
+        animation-duration: 3s;
     }
 }
 .cabecero__menu--sm{
@@ -114,11 +114,16 @@ hr {
 /* Footer */
 .pie {
     background-color: $colorFooter;
-    color: $color5;
+    color: $colorFuente2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
 }
 
 .pie__contenedor {
     font-size: 30px;
+    padding: 20px;
 }
 
 /* Fin Footer */

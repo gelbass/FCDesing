@@ -71,8 +71,6 @@
         @include grid-maquetado(grid, 1fr, "grupo1"
             "grupo2"
             "grupo3");
-        gap: 5px;
-        justify-items: center;
     }
 
     // INICIO Imagenes
@@ -87,6 +85,7 @@
 
     .imagenes__servicios--1 {
         width: 150px;
+        height: 112.5px;
     }
 
     .imagenes__servicios--4 {
@@ -172,7 +171,6 @@
         @include grid-maquetado(grid, 1fr 1f, "grupo1 grupo2"
             "grupo3 grupo4"
             "grupo5 grupo6");
-        gap: 5px;
     }
 
     .contenedor__carrusel {
@@ -196,6 +194,7 @@
 
     .imagenes__servicios--1 {
         width: 150px;
+        height: 112.5px;
     }
 
     .imagenes__logo {
@@ -265,7 +264,6 @@
         @include grid-maquetado(grid, 1fr 1f, "grupo1 grupo2"
             "grupo3 grupo4"
             "grupo5 grupo6");
-        gap: 5px;
     }
 
     .contenedor__carrusel {
@@ -293,6 +291,7 @@
 
     .imagenes__servicios--1 {
         width: 150px;
+        height: 112.5px;
     }
 
     .formulario--lg {
@@ -321,6 +320,10 @@
             "footer footer");
     }
 
+    .contenedor--invertido {
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .contenedor__galeria {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -332,7 +335,6 @@
         @include grid-maquetado(grid,1fr 1f,"grupo1 grupo2"
             "grupo3 grupo4"
             "grupo5 grupo6");
-        gap: 5px;
     }
 
     .contenedor__carrusel {
@@ -357,6 +359,7 @@
 
     .imagenes__servicios--1 {
         width: 200px;
+        height: 150px;
     }
 
     .oculto1 {
@@ -368,12 +371,16 @@
     }
 }
 
-@media only screen and (min-width:1020px) and (max-width:1168px) {
+@media only screen and (min-width:1020px) and (max-width:1200px) {
     .contenedor__galeria {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         padding: 20px;
         gap: 10px;
+    }
+    .contenedor--invertido {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .oculto2 {

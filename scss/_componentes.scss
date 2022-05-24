@@ -17,7 +17,7 @@
 
 .link {
     text-decoration: none;
-    color: $color5;
+    color: $colorFuente2;
 }
 
 .mapa {
@@ -30,7 +30,11 @@
     height: 450px
 }
 
-.bg{
-    background-color: $colorBackground;
+.carrusel--indicador{
+    background-color: $color5 !important; 
+}
+.carrusel--control{
+    color: $color5;
+    font-size: 40px;
 }
 // Fin Componentes Varios

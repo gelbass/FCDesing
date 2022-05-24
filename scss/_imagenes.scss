@@ -7,7 +7,7 @@
 
 .logo{
     animation: logoInicio;
-    animation-duration: 5s;
+    animation-duration: 1.8s;
 }
 
 .imagenes__logo {
@@ -20,7 +20,7 @@
 }
 
 .imagenes__servicios {
-    @include imagenes($bordes,0px 0px 6px 0px $colorFuente1,200px,auto);
+    @include imagenes($bordes,0px 0px 6px 0px $colorBorder,auto,auto);
     filter: grayscale(50%);
     &:hover {
         transition-delay: 10s;
@@ -31,7 +31,8 @@
 }
 
 .imagenes__servicios--1 {
-    width: 400px;
+    width: 410px;
+    height: 305px;
     border-radius: $bordes;
     grid-area: grupo1;
 }

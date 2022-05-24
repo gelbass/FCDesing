@@ -73,14 +73,14 @@
 
         <div id="container__index">
             <!-- NOSOTROS -->
-            <section class=" contenedor contenedor__color2" id="nosotros">
-                <div class="container-fluid">
+            <section class=" contenedor-fluid  contenedor__color2" id="nosotros">
+                <div class="container p-5">
                     <div class="contenedor__cajas row">
-                        <div class="col-sm">
-                            <h2 class="contenedor__titulo contenedor__titulo--Left">Nosotros</h2>
-                            <p>Trabajamos con excelencia, amor y pasión</p>
+                        <div class="col-lg d-flex align-items-center flex-column">
+                            <h2 class="contenedor__titulo">Nosotros</h2>
+                            <p class="text-center">Trabajamos con excelencia, amor y pasión</p>
                         </div>
-                        <div class="col-sm">
+                        <div class="col-lg d-flex justify-content-center">
                             <img class="imagenes__nosotros img-fluid" src="./img/Nosotros.webp" alt="nosotros">
                         </div>
                     </div>
@@ -89,28 +89,28 @@
             <!-- FIN NOSOTROS -->
 
             <!-- SERVICIOS -->
-            <section class=" contenedor contenedor__color1" id="servicios">
-                <div class="container-fluid ">
+            <section class=" contenedor-fluid contenedor__color1" id="servicios">
+                <div class="container p-5">
                     <div class="contenedor--invertido contenedor__cajas row">
-                        <div class="col">
+                        <div class="col d-flex justify-content-center">
                             <div class="contenedor__galeria--index">
-                                <img src="./img/servicios1.webp" class="imagenes__servicios imagenes__servicios--1"
+                                <img src="./img/servicios1.jpg" class="imagenes__servicios imagenes__servicios--1"
                                     alt="servicios">
-                                <img src="./img/servicios2.webp" class="imagenes__servicios imagenes__servicios--2"
+                                <img src="./img/servicios2.jpg" class="imagenes__servicios imagenes__servicios--2"
                                     alt="servicios">
-                                <img src="./img/servicios3.webp" class="imagenes__servicios imagenes__servicios--3"
+                                <img src="./img/servicios3.jpg" class="imagenes__servicios imagenes__servicios--3"
                                     alt="servicios">
-                                <img src="./img/servicios4.webp" class="imagenes__servicios imagenes__servicios--4"
+                                <img src="./img/servicios4.jpg" class="imagenes__servicios imagenes__servicios--4"
                                     alt="servicios">
-                                <img src="./img/servicios5.webp" class="imagenes__servicios imagenes__servicios--5"
+                                <img src="./img/servicios5.jpg" class="imagenes__servicios imagenes__servicios--5"
                                     alt="servicios">
-                                <img src="./img/servicios6.webp" class="imagenes__servicios imagenes__servicios--6"
+                                <img src="./img/servicios6.jpg" class="imagenes__servicios imagenes__servicios--6"
                                     alt="servicios">
                             </div>
                         </div>
-                        <div class="col">
-                            <h2 class="contenedor__titulo">Nuestros Servicios</h2>
-                            <p>Nos adaptamos a tus necesidades.</p>
+                        <div class="col d-flex align-items-center flex-column">
+                            <h2 class="contenedor__titulo text-center">Nuestros Servicios</h2>
+                            <p class="text-center">Nos adaptamos a tus necesidades.</p>
                         </div>
                     </div>
                 </div>
@@ -121,10 +121,12 @@
             <section class="container-fluid contenedor contenedor__color3" id="clientes">
                 <h2 class="contenedor__titulo ">Nuestros Clientes</h2>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <ol class="carousel-indicators ">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                            class="active carrusel--indicador"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="carrusel--indicador"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="carrusel--indicador"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3" class="carrusel--indicador"></li>
                     </ol>
                     <div class="carousel-inner contenedor__carrusel">
                         <div class="carousel-item active">
@@ -331,12 +333,12 @@
                     </div>
                     <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
                         data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <i class="fa-solid fa-chevron-left carrusel--control" aria-hidden="true"></i>
                         <span class="sr-only">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"
                         data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <i class="fa-solid fa-chevron-right carrusel--control" aria-hidden="true"></i>
                         <span class="sr-only">Next</span>
                     </button>
                 </div>
@@ -345,7 +347,7 @@
 
             <!-- SUSCRIPCION -->
             <section id="contacto">
-                <div class="container-fluid contenedor contenedor__color4">
+                <div class="container-fluid contenedor contenedor__color1">
                     <h2 class="contenedor__titulo">¿ESTAS LISTO PARA EMPEZAR?</h2>
                     <form class="formulario formulario--lg" action="">
                         <div class="form-group row">
@@ -393,13 +395,10 @@
         <!-- FOOTER -->
         <footer class="container-fluid pie" id="footer">
             <div class="row">
-                <div class="col-md-6 d-flex justify-content-center align-content-center">
-                    <div class="align-self-center">
-                        <img src="./img/fcDesing_logo1.png" class="imagenes__logo--footer d-inline " alt="FC Desing">
-                        <h3 class="d-inline ">FC Desing</h3>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex justify-content-center  align-self-center align-content-center">
+                <div class="col-md">
+                    <img src="./img/fcDesing_logo1.png" class="imagenes__logo--footer d-inline-block" alt="FC Desing">
+                    <h3>FC Desing</h3>
+                    <h6>Diseño gráfico - UX/UI</h6>
                     <div class="pie__contenedor">
                         <a href="https://www.facebook.com/FaniCreative/" target="_blank" rel="noopener noreferrer"><i
                                 class="fa-brands fa-facebook link"></i></a>
@@ -410,9 +409,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center align-content-center p-3">
-                <strong>@2022 Germán Lacruz. Todos los derechos reservados.</strong>
-            </div>
+            <strong>@2022 Germán Lacruz. Todos los derechos reservados.</strong>
         </footer>
         <!-- FIN FOOTER -->
 
@@ -432,4 +429,5 @@
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
 </body>
+
 </html>
