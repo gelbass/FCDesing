@@ -53,7 +53,7 @@ $imagenes-grid-area:(
 
 .imagenes__clientes {
     img {
-        @include imagenes(100%,0px 0px 6px 0px $colorFuente1,100px,auto);
+        @include imagenes(100%,0px 0px 6px 0px $colorFuente1,100px,100px);
         margin-top: 10px;
         margin-bottom: 10px;
     }
