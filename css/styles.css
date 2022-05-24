@@ -100,7 +100,7 @@ hr {
   display: inline-block;
   padding: 0px 40px 0px 40px;
   animation: menu;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 .cabecero__menu--sm {
