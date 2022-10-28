@@ -4,6 +4,8 @@
         "nodemon": "^2.0.15"
     },
     "build-css": "node-sass --include-path scss scss/styles.scss css/styles.scss.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
-    
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "dependencies": {
+        "@emailjs/browser": "^3.7.0"
+    }
 }

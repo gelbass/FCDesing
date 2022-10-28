@@ -349,7 +349,7 @@
             <section id="contacto">
                 <div class="container-fluid contenedor contenedor__color1">
                     <h2 class="contenedor__titulo">¿Trabajamos juntos?</h2>
-                    <form class="formulario formulario--lg" action="">
+                    <form class="formulario formulario--lg" action="" id="formContacto" >
                         <div class="form-group row">
                             <label class="col-sm-2 form-label" for="nombre">Nombre </label>
                             <div class="col-sm-10">
@@ -384,7 +384,7 @@
                             <label for="checkbox" class="form-check-label">Acepto politicas y condiciones</label>
                         </div>
                         <div class="form-group">
-                            <input class="btn" type="submit" value="Suscribete">
+                            <input class="btn" type="submit" value="Suscribete" id="enviarEmail">
                         </div>
                     </form>
                 </div>
@@ -419,6 +419,12 @@
         </a>
         <!-- FIN ANCLA INICIO DE PAGINA -->
     </main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('cq8RBcup3_7AZUwJo')
+    </script>
+    <script type="text/javascript" src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
